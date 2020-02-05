@@ -6,7 +6,7 @@ const Dashboard = () => {
   const context = useContext(ToolContext);
 
   useEffect(()=>{
-    console.log(context)
+    console.log('from dashboard',context)
   }, [])
 
   return(

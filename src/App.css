@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.fb-btn {
+  background-color: #3b5998;
+}
+
+.fb-btn svg {
+  margin-right: 20px;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
