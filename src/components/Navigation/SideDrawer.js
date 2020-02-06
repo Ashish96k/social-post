@@ -26,7 +26,7 @@ import PersonIcon from '@material-ui/icons/Person';
 import { useStyles } from './Theme';
 import Home from '../../pages/Home';
 
-const SideDrawer = () => {
+const SideDrawer = (props) => {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -126,7 +126,7 @@ const SideDrawer = () => {
       </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        <Home />
+        { props.children }
       </main>
     </div>
   );

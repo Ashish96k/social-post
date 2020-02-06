@@ -4,6 +4,7 @@ import { ToolContext } from './store/context';
 import Auth from './pages/Auth/Auth';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
+import Profile from './pages/Profile';
 import SideDrawer from './components/Navigation/SideDrawer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,8 +20,11 @@ function App() {
         <Route exact path="/auth" component={Auth} />
         {context.auth ? (
           <>
-            <Route exact path="/home" component={SideDrawer} />
-            {/* <Route exact path="/dashboard" component={Dashboard} /> */}
+          <SideDrawer>
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/dashboard" component={Dashboard} />
+            <Route exact path="/profile" component={Profile} />
+          </SideDrawer>
           </>
         ) : (
           <Redirect to="/auth" />

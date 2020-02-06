@@ -11,7 +11,7 @@ const Dashboard = () => {
 
   return(
     <div>
-      Hello from Drawer
+      Hello from Dashboard
     </div>
   );
 }

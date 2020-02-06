@@ -6,10 +6,11 @@ import Profile from './Profile';
 const Home = () => {
   return (
     <div>
-      <Switch>
+      {/* <Switch>
         <Route exact path='/dashboard' component={Dashboard} />
         <Route exact path='/profile' component={Profile} />
-      </Switch>
+      </Switch> */}
+      Hello from home
     </div>
   );
 };
