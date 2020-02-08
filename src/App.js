@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { ToolContext } from './store/context';
 import Auth from './pages/Auth/Auth';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import Dashboard from './pages/Dashboard';
 import Profile from './pages/Profile';
 import SideDrawer from './components/Navigation/SideDrawer';

@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 const ToolContext = React.createContext();
 
 const ToolProvider = props => {
-  const [auth, setAuth] = useState(false);
+  const [auth, setAuth] = useState(true);
 
   const login = () => {
     setAuth(true);

@@ -24,7 +24,7 @@ import DashboardIcon from '@material-ui/icons/Dashboard';
 import PersonIcon from '@material-ui/icons/Person';
 
 import { useStyles } from './Theme';
-import Home from '../../pages/Home';
+import Home from '../../pages/Home/Home';
 
 const SideDrawer = (props) => {
   const classes = useStyles();
